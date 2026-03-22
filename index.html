@@ -106,6 +106,12 @@
                 </button>
                 <p id="error-msg" class="text-red-500 text-xs mt-4 hidden bg-red-500/10 p-2 rounded"><i class="fas fa-exclamation-triangle"></i> Número incorrecto o dispositivo bloqueado.</p>
             </div>
+            
+            <!-- LOADER PARA VERIFICACIÓN DE DISPOSITIVO -->
+            <div id="login-loader" class="hidden flex-col items-center justify-center py-8">
+                <div class="spinner mb-4"></div>
+                <p class="text-gray-400 text-sm">Verificando dispositivo...</p>
+            </div>
         </div>
     </div>
 
@@ -228,7 +234,7 @@
 
             <!-- RESUMEN DEL NIVEL -->
             <div class="glass-panel rounded-xl p-4 mb-6">
-                <h3 class="text-gold font-bold text-xs uppercase tracking-widest mb-3 text-center">📊 Tu Logro Este Etapa</h3>
+                <h3 class="text-gold font-bold text-xs uppercase tracking-widest mb-3 text-center">📊 Tu Logro Esta Etapa</h3>
                 <div class="grid grid-cols-3 gap-3 text-center">
                     <div class="bg-black/40 rounded-lg p-3">
                         <p class="text-xl font-bold text-white">1</p>
@@ -660,11 +666,11 @@
                 </div>
             </div>
             
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-sun"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">DESAYUNO</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Huevos Revueltos con Nopales. 3 claras de huevo + 2 huevos enteros (180g claras, 100g huevos) revueltos con 1/2 taza de nopales cocidos y picados (80g). Servir con 1 tortilla de maíz mediana (30g). Cocinar con 1 cucharadita de aceite de aguacate (5ml).</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-apple-alt"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK AM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Quesillo con Jícama. 50g de quesillo desmoronado con 1/2 taza de jícama picada (70g) y chile en polvo al gusto.</p></div>
-            <div class="glass p-4 rounded-xl border border-gold/30 bg-gold/5 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-utensils"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">COMIDA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Pechuga de Pollo en Salsa con Nopales y Arroz. 150g de pechuga de pollo cocida y deshebrada. Cocinar en salsa hecha con 1 jitomate mediano, 1/4 de cebolla, 1 chile serrano. Acompañar con 1/3 taza de arroz rojo cocido (aprox. 50g) y 1.5 tazas de nopales cocidos (225g). Utilizar 1 cucharada de aceite vegetal (15ml) para la salsa.</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-coffee"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK PM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Papaya con Quesillo. 1 taza de papaya picada (140g) con 30g de quesillo desmoronado.</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-moon"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">CENA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Pollo con Calabacitas y Elote. 150g de pechuga de pollo deshebrada, salteada con 1.5 tazas de calabacitas picadas (225g), 1/4 de taza de granos de elote (40g), 20g de quesillo desmoronado, 1/4 de cebolla y epazote. Cocinar con 1 cucharadita de aceite de oliva (5ml). Acompañar con 1/2 tortilla de maíz mediana (15g).</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-sun"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">DESAYUNO</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Huevos revueltos a la mexicana con nopales. 5 huevos enteros (aprox. 300g) preparados con 1 cucharadita de aceite vegetal (5ml), 1/2 taza de nopales cocidos y picados, 1/4 taza de jitomate picado y cebolla. Acompañar con 2 tortillas de maíz medianas.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-apple-alt"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK AM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">70g de pechuga de pollo cocida y deshebrada.</p></div>
+            <div class="glass p-4 rounded-xl border border-gold/30 bg-gold/5 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-utensils"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">COMIDA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Pechuga de pollo a la plancha con arroz blanco y calabacitas. 150g de pechuga de pollo cocida, sazonada. 1 taza de arroz blanco cocido (aprox. 150g). 1 taza de calabacitas picadas (aprox. 150g) salteadas con 1/4 taza de jitomate y cebolla, usando 1 cucharada de aceite de oliva (15ml).</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-coffee"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK PM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">70g de quesillo.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-moon"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">CENA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Fajitas de pollo con pimientos y cebolla. 100g de pechuga de pollo en fajitas. 1 taza de pimientos (verde, rojo) y cebolla en julianas (aprox. 150g) salteados con 1 cucharadita de aceite de oliva (5ml). Acompañar con 1 tortilla de maíz mediana.</p></div>
         </div>
 
         <!-- VARIACIÓN 2 -->
@@ -678,11 +684,11 @@
                     <span class="text-[10px] text-blue-400">Martes, Jueves, Sábado</span>
                 </div>
             </div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-sun"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">DESAYUNO</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Chilaquiles Rojos con Pollo. 120g de pechuga de pollo deshebrada, servida sobre 0.75 tazas de totopos de maíz caseros (equivalente a 1.5 tortillas de maíz medianas tostadas sin aceite). Bañar con salsa roja (hecha con 2 jitomates medianos, 1/4 de cebolla, 1 chile serrano, cocinada con 1 cucharadita de aceite de oliva (5ml)). Decorar con 20g de quesillo desmoronado y 1/4 de aguacate pequeño (20g).</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-apple-alt"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK AM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Nopales con Quesillo y Aguacate. 1 taza de tiras de nopal cocido (150g) con 30g de quesillo desmoronado y 1/4 de aguacate mediano (30g).</p></div>
-            <div class="glass p-4 rounded-xl border border-gold/30 bg-gold/5 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-utensils"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">COMIDA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Bistec de Res Encebollado con Arroz y Ejotes. 150g de bistec de res magro (sin grasa visible), cocinado con 1/2 cebolla fileteada y 1 cucharada de aceite de oliva (15ml). Acompañar con 1/2 taza de arroz rojo cocido (aprox. 75g) y 1 taza de ejotes al vapor (120g).</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-coffee"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK PM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Flores de Calabaza con Quesillo. 1 taza de flores de calabaza salteadas (50g) con 20g de quesillo desmoronado y 1 cucharadita de aceite de oliva (5ml).</p></div>
-            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-moon"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">CENA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Sopa de Lentejas con Pollo y Verduras. 1/2 taza de lentejas cocidas (100g), preparadas en caldo con 150g de pechuga de pollo deshebrada, 1/2 taza de zanahoria y calabacín picados (80g), 1/4 de cebolla y 1 jitomate picado. Cocinar con 1 cucharadita de aceite de oliva (5ml) al inicio.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-sun"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">DESAYUNO</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Tinga de pollo suave. 120g de pechuga de pollo deshebrada, preparada con 1/2 taza de jitomate y cebolla cocidos (sin picante), usando 1 cucharada de aceite vegetal (15ml). Acompañar con 2 tortillas de maíz medianas.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-apple-alt"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK AM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">2 huevos cocidos (aprox. 120g).</p></div>
+            <div class="glass p-4 rounded-xl border border-gold/30 bg-gold/5 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-utensils"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">COMIDA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Pechuga de pollo en salsa verde suave con arroz blanco y nopales. 150g de pechuga de pollo cocida, bañada en 1/2 taza de salsa verde hecha con tomatillo y cilantro (sin chile). 1 taza de arroz blanco cocido (aprox. 150g). 1/2 taza de nopales cocidos y picados. Utilizar 1 cucharada de aceite de oliva (15ml) para cocinar.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-coffee"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">SNACK PM</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">70g de quesillo.</p></div>
+            <div class="glass p-4 rounded-xl border border-gray-800 relative group"><div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gold text-xs"><i class="fas fa-moon"></i></div><h3 class="font-heading text-sm text-gray-200 tracking-wide">CENA</h3></div><p class="text-xs text-gray-400 leading-relaxed pl-11">Calabacitas rellenas de pollo y queso. 1 calabacita grande (aprox. 200g) cocida, rellena con 100g de pechuga de pollo deshebrada y 30g de quesillo. Gratinar ligeramente. Usar 1 cucharadita de aceite vegetal (5ml) para la cocción.</p></div>
         </div>
 
         <!-- RETO DE ELIMINACIÓN PAULATINA -->
@@ -957,7 +963,7 @@
                         <p class="font-bold text-white uppercase text-[10px]">Proteínas</p>
                     </div>
                     <div class="pl-8">
-                        <p class="text-xs text-gray-300 leading-relaxed">Pechuga de pollo, Huevos, Claras de huevo, Quesillo, Bistec de res magro, Lentejas.</p>
+                        <p class="text-xs text-gray-300 leading-relaxed">Pechuga de pollo, Huevos, Quesillo (queso Oaxaca).</p>
                     </div>
                 </div>
 
@@ -969,7 +975,7 @@
                         <p class="font-bold text-white uppercase text-[10px]">Carbohidratos</p>
                     </div>
                     <div class="pl-8">
-                        <p class="text-xs text-gray-300 leading-relaxed">Tortillas de maíz, Arroz, Frijoles bayos (para snack si se desea en el futuro), Jícama, Papaya, Elote (granos).</p>
+                        <p class="text-xs text-gray-300 leading-relaxed">Tortillas de maíz, Arroz blanco.</p>
                     </div>
                 </div>
 
@@ -981,7 +987,7 @@
                         <p class="font-bold text-white uppercase text-[10px]">Verduras y Frutas</p>
                     </div>
                     <div class="pl-8">
-                        <p class="text-xs text-gray-300 leading-relaxed">Nopales, Jitomate, Cebolla, Chile serrano, Calabacín, Epazote, Aguacate, Ejotes, Flores de calabaza, Zanahoria.</p>
+                        <p class="text-xs text-gray-300 leading-relaxed">Nopales, Jitomate, Cebolla, Calabacitas, Pimientos (rojo, verde), Tomatillo, Cilantro, Aceite vegetal, Aceite de oliva.</p>
                     </div>
                 </div>
             </div>
@@ -991,11 +997,14 @@
     </div>
 
     <script>
+        // ========================================
+        // CORRECCIÓN PRINCIPAL: Variables correctas
+        // ========================================
         const CLIENT_PHONE = "7753579472"; 
         const MASTER_KEY = "INFIT2026PRO"; 
         const userName = "Maria Araceli";
         const userLevel = 1;
-        const startDate = new Date("2026-03-24T00:00:00");
+        const startDate = new Date("2026-03-23T00:00:00");
         const endDate = new Date(startDate);
         endDate.setDate(startDate.getDate() + 29);
         
@@ -1045,28 +1054,36 @@
             }
         };
 
+        // ========================================
+        // CORRECCIÓN: Función checkAccess corregida
+        // ========================================
         async function checkAccess() {
             const inputRaw = document.getElementById('pass-input').value.trim();
-            const inputPhone = inputRaw.replace(/\D/g, ''); 
+            
+            // CORRECCIÓN: Regex sin escape doble
+            const inputPhone = inputRaw.replace(/\D/g, '');
             const inputMaster = inputRaw.toUpperCase();
 
             document.getElementById('error-msg').classList.add('hidden');
             
+            // Admin puede acceder con la clave maestra
             if (inputMaster === MASTER_KEY) {
                 showWelcomeScreen(true); 
                 return;
             }
 
+            // Usuario accede con su número de teléfono
             if (inputPhone === CLIENT_PHONE) {
                 verifyDeviceLock();
             } else {
-                showError("Número incorrecto.");
+                showError("Número incorrecto. Verifica tu número de teléfono.");
             }
         }
 
         function verifyDeviceLock() {
             const btnForm = document.getElementById('login-form');
             const loader = document.getElementById('login-loader');
+            
             btnForm.style.display = 'none';
             loader.style.display = 'flex';
 
@@ -1079,24 +1096,33 @@
                 localStorage.setItem('infit_device_id', currentDeviceId);
             }
 
-            if(!db) { finishLogin(); return; }
+            if(!db) { 
+                finishLogin(); 
+                return; 
+            }
 
             const deviceRef = db.ref('users/' + userId + '/deviceId');
             deviceRef.once('value')
                 .then((snapshot) => {
                     const savedDevice = snapshot.val();
                     if (!savedDevice) {
+                        // Primer acceso: registrar dispositivo
                         deviceRef.set(currentDeviceId);
                         finishLogin();
                     } else if (savedDevice === currentDeviceId) {
+                        // Mismo dispositivo: permitir acceso
                         finishLogin();
                     } else {
+                        // Dispositivo diferente: bloquear
                         loader.style.display = 'none';
                         btnForm.style.display = 'block';
-                        showError("Plan vinculado a otro celular.");
+                        showError("Este plan ya está vinculado a otro dispositivo. No puedes compartirlo.");
                     }
                 })
-                .catch(err => { finishLogin(); });
+                .catch(err => { 
+                    console.error("Firebase error:", err);
+                    finishLogin(); 
+                });
         }
 
         function finishLogin() {
@@ -1105,9 +1131,10 @@
         }
 
         function showWelcomeScreen(isAdmin) {
-            document.getElementById('lock-screen').style.opacity = '0';
+            const lockScreen = document.getElementById('lock-screen');
+            lockScreen.style.opacity = '0';
             setTimeout(() => {
-                document.getElementById('lock-screen').style.display = 'none';
+                lockScreen.style.display = 'none';
                 document.getElementById('welcome-screen').style.display = 'flex';
             }, 500);
         }
